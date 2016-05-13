@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/nicescroll.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/drilldown.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/airhost_dashboard.js"></script>
+
+	<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse bg-teal">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/airhost_logo2.svg" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown language-switch">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="assets/images/flags/gb.png" class="position-left" alt="">
+						English
+						<span class="caret"></span>
+					</a>
+
+					<ul class="dropdown-menu">
+						<li><a class="deutsch"><img src="assets/images/flags/de.png" alt=""> Deutsch</a></li>
+						<li><a class="ukrainian"><img src="assets/images/flags/ua.png" alt=""> Українська</a></li>
+						<li><a class="english"><img src="assets/images/flags/gb.png" alt=""> English</a></li>
+						<li><a class="espana"><img src="assets/images/flags/es.png" alt=""> España</a></li>
+						<li><a class="russian"><img src="assets/images/flags/ru.png" alt=""> Русский</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="assets/images/placeholder.jpg" alt="">
+						<span>Victoria</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+						<li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Second navbar -->
+	<div class="navbar navbar-default" id="navbar-second">
+		<ul class="nav navbar-nav no-border visible-xs-block">
+			<li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+		</ul>
+
+		<div class="navbar-collapse collapse" id="navbar-second-toggle">
+			<ul class="nav navbar-nav navbar-nav-material">
+				<li class="active"><a href="index.html"><i class="icon-display4 position-left"></i> Dashboard</a></li>
+
+				<li>
+					<a href="#"><i class="icon-calendar position-left"></i> Cleaning Calendar</a>
+				</li>
+				<li>
+					<a href="#"><i class="icon-chart position-left"></i> Booking Chart</a>
+				</li>
+				<li>
+					<a href="#"><i class="icon-stats-bars4 position-left"></i> Booking Heatmap</a>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-nav-material navbar-right">
+				
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-cog3"></i>
+						<span class="visible-xs-inline-block position-right">Share</span>
+						<span class="caret"></span>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+						<li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+						<li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /second navbar -->
+
+
+	<!-- Page header -->
+	<div class="page-header">
+		<div class="page-header-content">
+			<div class="page-title">
+				<h4>
+					<i class="icon-arrow-left52 position-left"></i>
+					<span class="text-semibold">Home</span> - Dashboard
+					<small class="display-block">Good morning, Obatake Takashi!</small>
+				</h4>
+			</div>
+
+			<div class="heading-elements">
+				<div class="heading-btn-group">
+					<a href="#" class="btn btn-link btn-float has-text text-size-small"><i class="icon-user-plus text-indigo-400"></i><span>Add Account</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /page header -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Main charts -->
+				
+				<!-- /main charts -->
+
+
+				<!-- Dashboard content -->
+				<div class="row">
+					<div class="col-lg-8">
+
+						<!-- Marketing campaigns -->
+						<div class="panel panel-flat border-top-primary">
+							<div class="panel-heading">
+								<h6 class="panel-title">AH 1 Bedroom Apartment in Kyoto No 8</h6>
+								<div class="heading-elements">
+									<form class="heading-form" action="#">
+										<div class="form-group">
+											<label class="checkbox-inline checkbox-switchery checkbox-right switchery-xs">
+												<input type="checkbox" class="switch" checked="checked">
+												Status:
+											</label>
+										</div>
+									</form>
+									<div class="btn-group">
+	                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="icon-cog5 position-left"></i> Dropdown <span class="caret"></span></button>
+	                  <ul class="dropdown-menu dropdown-menu-right">
+											<li><a href="#"><i class="icon-mail-read"></i> Auto Message</a></li>
+											<li><a href="#"><i class="icon-price-tag"></i> Pricing</a></li>
+											<li><a href="#"><i class="icon-statistics"></i> Statistics</a></li>
+											<li><a href="#"><i class="icon-woman"></i> Cleaner</a></li>
+											<li class="divider"></li>
+											<li><a href="#"><i class="icon-cross3"></i> Disable</a></li>
+										</ul>
+									</div>
+              	</div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+												<div class="col-sm-6 col-xs-12">
+													<div class="thumbnail">
+														<a href="#" class="thumb">
+															<img src="https://a2.muscache.com/im/pictures/20e36af2-c3cb-49f9-883a-ce1cebc79b5c.jpg?aki_policy=small" class="img-circle" alt="">
+														</a>
+													</div>
+												</div>		
+												<div class="col-sm-2 col-xs-4 text-center">
+													<div class="content-group-sm svg-center position-relative" id="seven-days-chart"></div>
+												</div>
+												<div class="col-sm-2 col-xs-4 text-center">
+													<div class="content-group-sm svg-center position-relative" id="fifteen-days-chart"></div>
+												</div>
+												<div class="col-sm-2 col-xs-4 text-center">
+													<div class="content-group-sm svg-center position-relative" id="thirty-days-chart"></div>
+												</div>
+
+								</div>
+							</div>
+						</div>	
+							
+						<!-- /marketing campaigns -->
+
+
+						<!-- Quick stats boxes -->
+						
+						<!-- /quick stats boxes -->
+
+
+						<!-- Support tickets -->
+					
+						<!-- /support tickets -->
+
+
+						<!-- Latest posts -->
+						
+						<!-- /latest posts -->
+
+					</div>
+
+					<div class="col-lg-4">
+
+						<!-- Progress counters -->
+					
+						<!-- /progress counters -->
+
+
+						<!-- Daily sales -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h6 class="panel-title">Upcoming Checkins</h6>
+								<div class="heading-elements">
+									
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div id="sales-heatmap"></div>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table text-nowrap">
+									<thead>
+										<tr>
+											<th>House</th>
+											<th>Name</th>
+											<th>Date</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="media-left media-middle">
+													<img src="https://a2.muscache.com/im/pictures/20e36af2-c3cb-49f9-883a-ce1cebc79b5c.jpg?aki_policy=small" class="img-circle img-xs" alt="">
+												</div>
+
+												<div class="media-body">
+													<div class="media-heading">
+														<a href="#" class="letter-icon-title">Kyoto No 8</a>
+													</div>
+
+													<div class="text-muted text-size-small">Agoda</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted text-size-small">Ziwei Zhou</span>
+											</td>
+											<td>
+												<h6 class="text-semibold no-margin">2016-02-28</h6>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<div class="media-left media-middle">
+													<img src="https://a2.muscache.com/im/pictures/20e36af2-c3cb-49f9-883a-ce1cebc79b5c.jpg?aki_policy=small" class="img-circle img-xs" alt="">
+												</div>
+
+												<div class="media-body">
+													<div class="media-heading">
+														<a href="#" class="letter-icon-title">Kyoto No 8</a>
+													</div>
+
+													<div class="text-muted text-size-small">自在客</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted text-size-small">Meryl Zhou</span>
+											</td>
+											<td>
+												<h6 class="text-semibold no-margin">2016-03-1</h6>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="media-left media-middle">
+													<img src="https://a2.muscache.com/im/pictures/20e36af2-c3cb-49f9-883a-ce1cebc79b5c.jpg?aki_policy=small" class="img-circle img-xs" alt="">
+												</div>
+
+												<div class="media-body">
+													<div class="media-heading">
+														<a href="#" class="letter-icon-title">Kyoto No 8</a>
+													</div>
+
+													<div class="text-muted text-size-small">Airbnb</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted text-size-small">Kenichi Izawa</span>
+											</td>
+											<td>
+												<h6 class="text-semibold no-margin">2016-03-5</h6>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="media-left media-middle">
+													<img src="https://a2.muscache.com/im/pictures/20e36af2-c3cb-49f9-883a-ce1cebc79b5c.jpg?aki_policy=small" class="img-circle img-xs" alt="">
+												</div>
+
+												<div class="media-body">
+													<div class="media-heading">
+														<a href="#" class="letter-icon-title">Kyoto No 2</a>
+													</div>
+
+													<div class="text-muted text-size-small">Agoda</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted text-size-small">Takashi Obatake</span>
+											</td>
+											<td>
+												<h6 class="text-semibold no-margin">2016-03-10</h6>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="media-left media-middle">
+													<img src="https://a2.muscache.com/im/pictures/20e36af2-c3cb-49f9-883a-ce1cebc79b5c.jpg?aki_policy=small" class="img-circle img-xs" alt="">
+												</div>
+
+												<div class="media-body">
+													<div class="media-heading">
+														<a href="#" class="letter-icon-title">Kyoto No 8</a>
+													</div>
+
+													<div class="text-muted text-size-small">Airbnb</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted text-size-small">Audrey Pang</span>
+											</td>
+											<td>
+												<h6 class="text-semibold no-margin">2016-03-14</h6>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /daily sales -->
+
+
+						<!-- My messages -->
+						
+						<!-- /my messages -->
+
+
+						<!-- Daily financials -->
+						
+						<!-- /daily financials -->
+
+					</div>
+				</div>
+				<!-- /dashboard content -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+
+	<!-- Footer -->
+	<div class="footer text-muted">
+		&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+	</div>
+	<!-- /footer -->
+
+</body>
+</html>
